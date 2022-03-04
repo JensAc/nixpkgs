@@ -41,13 +41,13 @@ let
 in
 with py.pkgs; buildPythonApplication rec {
   pname = "awscli2";
-  version = "2.4.9"; # N.B: if you change this, change botocore to a matching version too
+  version = "2.4.23"; # N.B: if you change this, change botocore to a matching version too
 
   src = fetchFromGitHub {
     owner = "aws";
     repo = "aws-cli";
     rev = version;
-    sha256 = "sha256-ihmbw+gS7zZz/nebrmpEr9MR+dVabc70DBPPSrm3eeE=";
+    sha256 = "sha256-zpkphlIfmexqZm0lZgDP3RoQJqTpFdT+5dGtaLiRr/U=";
   };
 
   propagatedBuildInputs = [
